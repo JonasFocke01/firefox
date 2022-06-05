@@ -14,7 +14,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "{e3d5a6b9-488e-4f91-8991-df80456ee466}",
+      "id": "jonas@iobrokerextension.de",
       "strict_min_version": "42.0"
     }
   },
