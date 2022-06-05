@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "IoBroker AddOn Display",
+  "version": "1.0",
+  "author": "Jonas Focke",
+  "description": "Shows the iobroker vis page in an popup window",
+  "homepage_url": "https://github.com/JonasFocke01/iobroker_addon_display",
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": ["menus", "storage", "activeTab"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e3d5a6b9-488e-4f91-8991-df80456ee466}",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "icons": {
+    "48": "icons/default.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/default.png",
+    "default_title": "IoBroker",
+    "default_popup": "popup.html"
+  }
+}
