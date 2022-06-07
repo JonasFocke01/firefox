@@ -1,10 +1,9 @@
 async function saveOptions(e) {
   e.preventDefault();
 
-  const iobrokerInstanceUrl = Number(
-    document.getElementById("iobrokerInstanceUrl").value
-  );
-
+  const iobrokerInstanceUrl = document.getElementById(
+    'iobrokerInstanceUrl'
+  ).value;
   const settings = {
     iobrokerInstanceUrl,
   };
@@ -14,9 +13,9 @@ async function saveOptions(e) {
 
 async function loadOptions() {
   const options = await browser.storage.sync.get();
-  document.getElementById("iobrokerInstanceUrl").value =
+  document.getElementById('iobrokerInstanceUrl').value =
     options.iobrokerInstanceUrl;
 }
 
-document.addEventListener("DOMContentLoaded", loadOptions);
-document.getElementById("myForm").addEventListener("submit", saveOptions);
+document.addEventListener('DOMContentLoaded', loadOptions);
+document.getElementById('myForm').addEventListener('submit', saveOptions);
