@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "IoBroker AddOn Display",
-  "version": "1.0",
+  "version": "1.2",
   "author": "Jonas Focke",
   "description": "Shows the iobroker vis page in an popup window",
   "homepage_url": "https://github.com/JonasFocke01/iobroker_addon_display",
