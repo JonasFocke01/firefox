@@ -7,8 +7,7 @@ async function saveOptions(e) {
   const settings = {
     iobrokerInstanceUrl,
   };
-
-  browser.storage.sync.set(options);
+  browser.storage.sync.set(settings);
 }
 
 async function loadOptions() {
